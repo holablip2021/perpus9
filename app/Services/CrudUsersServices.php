@@ -2,7 +2,7 @@
 
 namespace App\Services;
 use App\Repositories\UsersRepository;
-use Validator;
+use Illuminate\Support\Facades\Validator;
 use App\Models\Users;
 class CrudUsersServices
 {

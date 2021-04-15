@@ -2,10 +2,10 @@
 
 namespace App\Services;
 use App\Repositories\TransaksiRepository;
-use Validator;
+use Illuminate\Support\Facades\Validator;
 use App\Models\Transaksi;
 use App\Models\Buku;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class CrudTransaksiServices
 {

@@ -2,8 +2,8 @@
 
 namespace App\Services;
 
-use Validator;
 use App\Repositories\RakRepository;
+use Illuminate\Support\Facades\Validator;
 use App\Models\Rak;
 class CrudRakServices
 {

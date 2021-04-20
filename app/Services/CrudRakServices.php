@@ -38,7 +38,6 @@ class CrudRakServices
             $pesan['pesan'] = 'Data telah tersimpan';
             return $pesan;
         } catch (\Exception $e) {
-            $pesan['status'] = false;
             $pesan['pesan'] = $e->getMessage();
             return $pesan;
         }

@@ -62,7 +62,6 @@ class CrudTransaksiServices
             $pesan['pesan'] = 'Pesanan Anda telah tersimpan, tunggu proses administrasi berikut';
             return $pesan;
         } catch (\Exception $e) {
-            $pesan['status'] = false;
             $pesan['pesan'] = $e->getMessage();
             return $pesan;
         }
@@ -91,7 +90,6 @@ class CrudTransaksiServices
             $pesan['pesan'] = 'Order telah berhasil diproses';
             return $pesan;
         } catch (\Exception $e) {
-            $pesan['status'] = false;
             $pesan['pesan'] = $e->getMessage();
             return $pesan;
         }
@@ -119,7 +117,6 @@ class CrudTransaksiServices
             $pesan['pesan'] = 'Order telah berhasil diproses';
             return $pesan;
         } catch (\Exception $e) {
-            $pesan['status'] = false;
             $pesan['pesan'] = $e->getMessage();
             return $pesan;
         }
@@ -166,7 +163,6 @@ class CrudTransaksiServices
             return $pesan;
         } catch (\Exception $e) {
             DB::rollback();
-            $pesan['status'] = false;
             $pesan['pesan'] = $e->getMessage();
             return $pesan;
         }

@@ -41,7 +41,6 @@ class CrudUsersServices
             $pesan['pesan'] = 'Registrasi berhasil,silahkan login';
             return $pesan;
         } catch (\Exception $e) {
-            $pesan['status'] = false;
             $pesan['pesan'] = 'Registrasi ditolak';
             return $pesan;
         }
@@ -74,7 +73,6 @@ class CrudUsersServices
             }
             return $pesan;
         } catch (\Exception $e) {
-            $pesan['status'] = false;
             $pesan['pesan'] = 'User atau Password salah';
             return $pesan;
         }

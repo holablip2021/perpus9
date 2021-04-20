@@ -21,6 +21,6 @@ class BukuController extends Controller
     public function index(Request $request)
     {
         $results =  $this->listrepo->getBuku();
-        return view('listing-buku', compact('results', 'filters'));
+        return view('listing-buku', compact('results'));
     }
 }
